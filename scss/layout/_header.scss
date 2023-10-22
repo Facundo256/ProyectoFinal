@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    background-color: $secondary-color;
+    color: $primary-color;
+    padding: 0.625rem 0;
+    .navbar {
+        margin-bottom: 0;
+        .nav-item-perfil img {
+            position: absolute;
+            top: 20;
+            right: 0;
+            height: 60%;
+        }
+        a {
+            @include link-styles;
+            color: white;
+            color: inherit;
+            cursor: default;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* .header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.625rem 0;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+.nav-item-perfil img {
+    position: absolute;
+    top: 20;
+    right: 0;
+    height: 60%;
+} */

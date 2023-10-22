@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/*primero llama variables mixins y todo lo de utilities
+*/
+/*todo lo que este en base*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*todo lo que es layout*/
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.625rem 0;
+}
+.header .navbar {
+  margin-bottom: 0;
+}
+.header .navbar .nav-item-perfil img {
+  position: absolute;
+  top: 20;
+  right: 0;
+  height: 60%;
+}
+.header .navbar a {
+  /* de header*/
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: white;
+  color: inherit;
+  cursor: default;
+}
+.header .navbar a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.header .navbar a:hover {
+  text-decoration: underline;
+}
+.header .navbar .nav-item-perfil img {
+  position: absolute;
+  top: 20;
+  right: 0;
+  height: 60%;
+}
+
+/* .header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.625rem 0;
+}
+.navbar {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+.nav-item-perfil img {
+    position: absolute;
+    top: 20;
+    right: 0;
+    height: 60%;
+} */
+main .container {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna*/
+  grid-gap: 20px; /* Agrega espacio entre las filas y el ancho máximo */
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+main .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main div img {
+  width: 30%;
+}
+main div .input-group {
+  margin-bottom: 15px;
+}
+main div .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+}
+main div .input-group input {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.1875rem;
+}
+main .form-container {
+  max-width: 25rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #fff;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+main .form-container h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+/* .form-container {
+    max-width: 25rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.1875rem;
+} */
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna*/
+/*grid-gap: 20px;*/ /* Agrega espacio entre las filas y el ancho máximo */
+/*max-width: 100%;
+    margin: 0 auto;
+} */
+/* .grid-item {*/ /* Estilos para los elementos dentro de la cuadrícula */
+/*     background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    width: 30%;
+} */
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem 0;
+*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.625rem 0;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* a:hover {
+    text-decoration: underline;
+    color: #007bff;
+} */
+.footer-index {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.3125rem 0;
+}
+.footer-index a {
+  color: #fff;
+}
+.footer-index a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* escritorio */
+@media (min-width: 1024px) {
+  .form-container {
+    max-width: 40rem;
+  }
+  .image-container img {
+    width: 20%;
+  }
+}
+/*  ipad */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form-container {
+    max-width: 30rem;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
+  }
+  .image-container img {
+    width: 25%;
+  }
+}
+/*  iphone  */
+@media (min-width: 500px) {
+  .form-container {
+    max-width: 20rem;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .footer-index {
+    width: 100%;
+  }
+  .image-container img {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

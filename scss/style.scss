@@ -1,0 +1,15 @@
+/*primero llama variables mixins y todo lo de utilities
+*/
+@import "./utilities/_variables";
+@import "./utilities/_funciones.scss";
+@import "./utilities/_maps";
+@import "./utilities/_mixins";
+
+/*todo lo que este en base*/
+@import "./base/_reset";
+
+/*todo lo que es layout*/
+@import "./layout/_header";
+@import "./layout/_main";
+@import "./layout/_footer";
+@import "./layout/_medias";
